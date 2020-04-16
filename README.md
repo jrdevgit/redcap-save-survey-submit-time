@@ -1,2 +1,2 @@
-# redcap-log-survey-submit
-Capture timestamp of survey submit or "Save &amp; Return" in a datetime field.
+# Save Survey Submit Time
+Capture timestamp of survey "Submit" or "Save &amp; Return Later" to a selected datetime field.
