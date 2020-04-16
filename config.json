@@ -1,0 +1,47 @@
+{
+	"name": "Save Survey Submit Time",
+
+	"namespace": "MCRI\\SaveSurveySubmitTime",
+
+	"authors": [
+		{
+			"name": "Jack Ren",
+			"email": "jack.ren@mcri.edu.au",
+			"institution": "Murdoch Children's Research Institute"
+		},
+		{
+			"name": "Luke Stevens",
+			"email": "luke.stevens@mcri.edu.au",
+			"institution": "Murdoch Children's Research Institute"
+		}
+	],
+
+	"description": "This module saves the most recent time a survey's 'Submit' or 'Save & Return Later' button is clicked to a specified field.",
+
+	"permissions": [
+                "redcap_save_record"
+        ],
+        
+	"project-settings": [
+		{
+			"name": "Settings for each instrument",
+			"key": "instrument_settings",
+			"type": "sub_settings",
+			"repeatable": true,
+			"sub_settings": [
+				{
+					"name": "Instrument to capture submit time (operates for surveys only)",
+					"key": "logtime_instrument",
+					"required": true,
+					"type": "form-list"
+				},
+				{
+					"name": "Save instrument submit time to this field",
+					"key": "logtime_field",
+					"required": true,
+					"type": "field-list"
+				}
+			]
+		}
+        ]
+}
