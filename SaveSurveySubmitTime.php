@@ -31,7 +31,6 @@ class SaveSurveySubmitTime extends AbstractExternalModule {
                                         $title = "ERROR in LogSurveySubmitTime external module: could not save value to field";
                                         $detail = "record=$record, event=$event_id, field=$logTimeField, value=$timeNow <br>saveResult=".print_r($saveResult, true);
                                         \REDCap::logEvent($title, $detail, '', $record, $event_id);
-                                        $this->sendAdminEmail($title, $detail);
                                 }
                         }
                 }
